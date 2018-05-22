@@ -10,21 +10,58 @@
 			flex-direction: column;
 			align-items: center;
 			justify-content: center;
+			font-family: 'Montserrat', sans-serif;
 		}
-		.tableCoffee{
-			width: 50%;
-			border: 1px solid red;
+		button{
+			border: none;
+			padding: 10px;
+			background-color: #820333;
+			color: white;
+		}
+		table, th, td {
+		    border: 1px solid black;
+		    border-collapse: collapse;
+		}
+		th, td {
+		    padding: 5px;
+		    text-align: left;   
+		}
+		.tableCoffe {
+			margin: 10px 0 10px 0;
+		}
+		.msg {
+			font-size: 18px;
+			margin: 10px 0 10px 0;
 		}
 		#messages {
 			font-size: 32px;
-			font-family: 'Helvetica', sans-serif;
 		}
 	</style>
+	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 </head>
 <body>
-	<h1 id="messages">HOLA</h1>
-	<div class="tableCoffe">Precios</div>
-	<button id="btnEvt">Buy Me!</button>
+	<h1 id="messages">WELLCOME</h1>
+	<img src="img/coffee.jpg" alt="Coffee" />
+	<div class="tableCoffe">Price of coffee</div>
+		<table style="width:100%">
+		  <tr style="background: #820333; color: white;">
+		    <th>Type</th>
+		    <th>Flavor</th> 
+		    <th>Price</th>
+		  </tr>
+		  <tr>
+		    <td>Cappucino</td>
+		    <td>Snickers</td> 
+		    <td>50</td>
+		  </tr>
+		  <tr>
+		    <td>Frappucino</td>
+		    <td>Carlos V</td> 
+		    <td>94</td>
+		  </tr>
+		</table>
+	<div class="msg">Here can you ask your order</div>
+	<button id="btnEvt">Buy me!</button>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 	<script src="main.js"></script>
 </body>
